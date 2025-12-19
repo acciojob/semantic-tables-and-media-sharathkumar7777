@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<h1>Semantic Tables and Media</h1>
+
+    <!-- Heading -->
+    <h1 data-ns-test="block-inline-h1">Semantic Tables and Media</h1>
 
     <!-- Table -->
     <table border="1">
@@ -34,30 +33,52 @@
         </tbody>
     </table>
 
+    <!-- Media Section -->
     <h2>List of medias</h2>
 
-    <!-- Ordered List -->
-   <h2>3 random audios</h2>
+    <!-- Ordered List (REQUIRED) -->
+    <ol>
+        <!-- FIRST li MUST contain img -->
+        <li>
+            <img
+                src="https://via.placeholder.com/150"
+                alt="sample image">
+        </li>
 
-<audio
-  src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
-  controls>
-</audio>
+        <li>
+            <audio
+                src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+                controls>
+            </audio>
+        </li>
 
-<audio
-  src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
-  controls>
-</audio>
+        <li>
+            <audio
+                src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
+                controls>
+            </audio>
+        </li>
+    </ol>
 
-<audio
-  src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3"
-  controls>
-</audio>
+    <!-- Audio Heading (EXACT TEXT) -->
+    <h2>3 random audios</h2>
 
+    <audio
+        src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+        controls>
+    </audio>
 
-    <script type="text/javascript" src="./script.js">
-</script>
+    <audio
+        src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
+        controls>
+    </audio>
+
+    <audio
+        src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3"
+        controls>
+    </audio>
+
+    <script type="text/javascript" src="./script.js"></script>
 
 </body>
-
 </html>
