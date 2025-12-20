@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Semantic Tables and Media</title>
 </head>
-
 <body>
 
-    <!-- Heading -->
-    <h1 data-ns-test="block-inline-h1">Semantic Tables and Media</h1>
-
-    <!-- Table -->
-    <table border="1">
+    <!-- Semantic Table -->
+    <table>
         <thead>
             <tr>
                 <th>Roll Number</th>
@@ -33,52 +30,34 @@
         </tbody>
     </table>
 
-    <!-- Media Section -->
+    <!-- Required Heading Between Table and List -->
     <h2>List of medias</h2>
 
-    <!-- Ordered List (REQUIRED) -->
+    <!-- Ordered List -->
     <ol>
-        <!-- FIRST li MUST contain img -->
+        <!-- First Item: Image -->
         <li>
-            <img
-                src="https://via.placeholder.com/150"
-                alt="sample image">
+            <img 
+                src="https://picsum.photos/id/123/200/300" 
+                alt="Sample image">
         </li>
 
+        <!-- Second Item: Video -->
         <li>
-            <audio
-                src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
-                controls>
-            </audio>
+            <video controls>
+                <source 
+                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" 
+                    type="video/mp4">
+            </video>
         </li>
 
+        <!-- Third Item: Audio -->
         <li>
-            <audio
-                src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
-                controls>
+            <audio controls 
+                src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
             </audio>
         </li>
     </ol>
-
-    <!-- Audio Heading (EXACT TEXT) -->
-    <h2>3 random audios</h2>
-
-    <audio
-        src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
-        controls>
-    </audio>
-
-    <audio
-        src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
-        controls>
-    </audio>
-
-    <audio
-        src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3"
-        controls>
-    </audio>
-
-    <script type="text/javascript" src="./script.js"></script>
 
 </body>
 </html>
